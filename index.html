@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Пример на bootstrap 4: Макет jumbotron с навигационной панели и базовая система разметки.">
 
-    <title>Большой экран | Jumbotron Template for Bootstrap</title>
+    <title>Освітній ресурс для вивчення мови програмування Python</title>
 
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -42,7 +42,7 @@
 
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">LearnPython</a>
+  <a class="navbar-brand" href="index.html">LearnPython</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -50,21 +50,28 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="books.html">Книги</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Категорії</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else тут</a>
+          <a class="dropdown-item" href="starter.html">Основи</a>
+          <a class="dropdown-item" href="data_types.html">Типи даних</a>
+          <a class="dropdown-item" href="files.html">Файли</a>
+          <a class="dropdown-item" href="modules.html">Модулі</a>
+          <a class="dropdown-item" href="numpy.html">NumPy</a>
+          
+
         </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="GUI.html">GUI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data_science.html">Data Science</a>
       </li>
     </ul>
     
@@ -76,9 +83,9 @@
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <h1 class="display-3">Hello, world!</h1>
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <h1 class="display-3">LearnPython - Освітній ресурс для вивчення мови програмування Python.</h1>
+      <p>Python — інтерпретована об'єктно-орієнтована мова програмування високого рівня зі строгою динамічною типізацією. Розроблена в 1990 році Гвідо ван Россумом. Структури даних високого рівня разом із динамічною семантикою та динамічним зв'язуванням роблять її привабливою для швидкої розробки програм, а також як засіб поєднування наявних компонентів.</p>
+      <p><a class="btn btn-primary btn-lg" href="https://uk.wikipedia.org/wiki/Python" role="button">Детальніше &raquo;</a></p>
     </div>
   </div>
 
@@ -86,21 +93,36 @@
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-4">
-        <h2>Heading</h2>
+        <h2>Data science</h2>
+        <p>Для Python є популярні бібліотеки і фреймворки машинного навчання. Дві найбільші з них - scikit-learn і TensorFlow. У scikit-learn вбудовані деякі загальновідомі алгоритми машинного навчання, про які йшла мова вище. TensorFlow - більш низкоуровневая бібліотека, яка дозволяє будувати призначені для користувача алгоритми.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>GUI (графічний інтерфейс)</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
       <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
+        <h2>Веб-програмування</h2>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
+
+  
+      <div class="container">
+        <h1 class="mt-5">Що можна робити за допомогою Python?</h1>
+          <h2>#1: Автоматизація нудних справ</h2>
+            <p>Це ресурс по «практичного програмування для початківців». Як і йдеться в заголовку, з цією книгою ви можете дізнатися, як автоматизувати нудні процеси, такі як оновлення електронних таблиць, або перейменовувати файли на комп'ютері. Це відмінна відправна точка для тих, хто вже освоїв основи Python.Что можна робити з Python?
+          У вас буде шанс попрактикуватися в тому, що ви вже вивчили на даний момент, створюючи словники, проводячи скрейпінг сайтів, працюючи з файлами і створюючи об'єкти і класи. Практичне використання, що зустрічаються в цій книзі дадуть вам реальне уявлення про те, що ви можете робити негайно.</p>       
+          <h2>#2: Створення блогу</h2>
+            <p>Це відкриття фреймворка Flask. На Python написані такі сервіси, як Instagram і YouTube, тому він відмінно підходить для створення власного мікроблога в експериментальних, а можливо, і комерційних цілях. У мегаруководстве Мігеля Грінберга детально розбирається Flask, а після його вивчення ви зможете написати свій перший веб-додаток.</p>
+          <h2>#3: Створення калькулятора</h2>
+            <p>За допомогою Python і цього керівництва ви можете зробити простий додаток для користувачів - калькулятор. Це двері в GUI-програмування - створення інтуїтивно зрозумілих графічних інтерфейсів. У процесі ви попрацюєте з модулем tkinter, який вже попередньо встановлено в останніх версіях Python.</p>
+          <h2>#4: Python і комп'ютерні ігри</h2>
+            <p>Для розробки ігор можна використовувати бібліотеку PyGame, хоча існують і більш популярні ігрові движки. На ній можна створювати аматорські проекти, але для розробки серйозних ігор варто пошукати щось краще.
+              Наприклад, можна починати з Unity на C# - це одна з найбільш загальновідомих середовищ розробки комп'ютерних ігор. Вона дозволяє створювати міжплатформенномі ігри для Windows, Mac, iOS і Android.</p>
+      </div>
 
     <hr>
 
