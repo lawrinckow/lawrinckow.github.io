@@ -80,7 +80,7 @@
 
 <main role="main" class="container">
     <div class="row">
-      <div class="col-md-8 blog-main">
+      <div class="col blog-main">
         <h3 class="pb-3 mb-4 font-italic border-bottom">
           From the Firehose
         </h3>
@@ -89,60 +89,61 @@
           <h2 class="blog-post-title mb-4">Основи мови програмування Python</h2>
           
   
-          <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-          <hr>
-          <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-          <blockquote>
-            <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          </blockquote>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          <h2>Heading</h2>
-          <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <h3>Sub-heading</h3>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-          <pre><code>Example code block</code></pre>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <h3>Sub-heading</h3>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p style="text-indent: 25px;" align="justify">
+            Python являє популярну високорівневу мова програмування, який призначений для створення додатків різних типів. Це і веб-додатки, і ігри, і настільні програми, і робота з базами  даних. Досить велике поширення пітон отримав в області машинного навчання і досліджень штучного інтелекту.
+            Вперше мова Python був анонсований в 1991 році голландським розробником Гвідо Ван Россум. З тих пір ця мова виконав великий шлях розвитку. У 2000 році була видана версія 2.0, а в 2008 році - версія 3.0. Незважаючи на кшталт такі великі проміжки між версіями постійно виходять підверсії. Так, поточної актуальною версією на момент написання даного матеріалу є 3.7. Більш детальнуінформацію про всіх релізах, версіях і зміни мови, а також власне інтерпретатори і необхідні утиліти для роботи та іншу корисну інформацію можна знайти на офіційному сайті <a href="https://www.python.org/">https://www.python.org/.</a> 
+            Основні особливості мови програмування Python:
+            Скриптова мова. Код програм визначається у вигляді скриптів.
+            Підтримка самих різних парадигм програмування, в тому числі об'єктно-орієнтованої та функціональної парадигм.
+            Інтерпретація програм. Для роботи зі скриптами необхідний інтерпретатор, який запускає і виконує скрипт.
+            Виконання програми на Python виглядає наступним чином. Спочатку ми пішім в текстовому редакторі скрипт з набором виразів на даній мові програмування. Передаємо цей скрипт на   виконання інтерпретатора. Інтерпретатор транслює код в проміжний байткод, а потім віртуальна машина переводить отриманий байткод в набір інструкцій, які виконуються операційною  системою.
+            Тут варто зазначити, що хоча формально трансляція інтерпретатором вихідного коду в байткод і переклад байткода віртуальною машиною в набір машинних команд представляють два різних     процеси, але фактично вони об'єднані в самому інтерпретатор.</p>
+          <h2>Основні особливості мови програмування Python</h2>
           <ul>
-            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-            <li>Donec id elit non mi porta gravida at eget metus.</li>
-            <li>Nulla vitae elit libero, a pharetra augue.</li>
+            <li><p>Скриптова мова. Код програм визначається у вигляді скриптів.</p></li>
+            <li><p>Підтримка найрізноманітніших парадигм програмування, у тому числі об'єктно-орієнтованої та функціональної.</p></li>
+            <li><p>Інтерпретація програм. Для роботи зі скриптами необхідний інтерпретатор, який запускає і виконує скрипт.</p></li>
           </ul>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-          <ol>
-            <li>Vestibulum id ligula porta felis euismod semper.</li>
-            <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-            <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-          </ol>
-          <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+          
+          <h3>Встановлення Python</h3>
+          <p>Для створення програм на Python нам буде потрібно інтерпретатор. Для його установки перейдемо на сайт https://www.python.org/ і на головній станиці в секції Downloads знайдемо посилання на завантаження останньої версії мови (на даний момент це 3.8.0):</p>
+          <img src="img/install.jpg" alt="" srcset="">
+          <p></p>
+          <p>Перейдемо за посиланням на сторінку з описом останньої версії мови. Ближче до низу на ній можна знайти список дистрибутивів для різних операційних систем. Виберемо потрібний нам пакет і завантажимо його. Наприклад, в моєму випадку це ОС Windows 64-х розрядна, тому я вибираю посилання на пакет Windows x86-64 executable installer. Після завантаження дистрибутива встановимо його.</p>
+          <br>
+          <img src="img/install_1.jpg" alt="" srcset="">
+          <p></p>
+          <p>На ОС Windows при запуску інсталятора запускається вікно майстра установки.</p>
+          <img src="img/install_2.jpg" alt="" srcset="">
+          <p></p>
+          <p>Після встановлення Python готовий до роботи.</p>
+          <h3>Перша програма на Python</h3>
+          
+          <p>Після установки інтерпретатора, як було описано в минулій темі, ми можемо почати створювати додатки на Python. Отже, створимо першу простеньку програму.
+
+              Як було сказано в минулій темі, програма інтерпретатора, якщо при установці не був змінений адреса, за замовчуванням встановлюється на Linux по шляху usr / local / bin / python37, а на Windows по шляху C: \ Users \ [ім'я користувача] \ AppData \ Local \ Programs \ Python \ Python37 \ і представляє файл під назвою python.exe.</p>
+              
+          <p>Запустимо інтерпретатор та введемо у нього наступний рядок:</p>
+          <img src="img/first_prog.jpg" alt="" srcset="">
+          <p></p>
+          <p>Консоль виведе наступний рядок:</p>
+          <img src="img/console.jpg" alt="" srcset="">
+          <p></p>
+          <p>Для цієї програми використовувався метод <strong>print()</strong></p>
+
+          <h3>Створення файла програми</h3>
+          <p>У реальності, як правило, програми визначаються у зовнішніх файлах-скриптах і потім передаються інтерпретатору на виконання. Тому створимо файл програми. Для цього на диску C або де-небудь в іншому місці файлової системи визначимо для скриптів папку python. А в цій папці створимо новий текстовий файл, який назвемо hello.py. За замовчуванням файли з кодом на мові Python, як правило, мають розширення py.</p>
+          <img src="img/catalog.jpg" alt="" srcset="">
+            <p></p>
+          <p>Відкриваємо цей файл у будь-якому редакторі і додаємо у нього наступний код.</p>
+          <img src="img/hello.jpg" alt="" srcset="">
+          <p></p>
+          <p>Скрипт складається з двох рядків. Перший рядок за допомогою методу input () очікує введення користувачем свого імені. Введене ім'я потім потрапляє в змінну name.
+
+            Другий рядок за допомогою методу print () виводить вітання разом з введеним ім'ям.</p>
         </div><!-- /.blog-post -->
   
-        <div class="blog-post">
-          <h2 class="blog-post-title">Another blog post</h2>
-          <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-  
-          <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-          <blockquote>
-            <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          </blockquote>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-        </div><!-- /.blog-post -->
-  
-        <div class="blog-post">
-          <h2 class="blog-post-title">New feature</h2>
-          <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-  
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <ul>
-            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-            <li>Donec id elit non mi porta gravida at eget metus.</li>
-            <li>Nulla vitae elit libero, a pharetra augue.</li>
-          </ul>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-        </div><!-- /.blog-post -->
+        
   
         <nav class="blog-pagination">
           <a class="btn btn-outline-primary" href="data_types.html">Далі</a>
@@ -158,10 +159,8 @@
   </main><!-- /.container -->
   <br>
   <footer class="blog-footer">
-    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-    <p>
-      <a href="#">Back to top</a>
-    </p>
+    <p style="text-indent: 25px;">LearnPython - ресурс для вивчення мови програмування Python</p>
+   
   </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

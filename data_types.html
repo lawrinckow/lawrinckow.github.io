@@ -89,60 +89,46 @@
           <h2 class="blog-post-title mb-4">Типи даних у мові Python</h2>
           
   
-          <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-          <hr>
-          <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-          <blockquote>
-            <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          </blockquote>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          <h2>Heading</h2>
-          <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          <h3>Sub-heading</h3>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-          <pre><code>Example code block</code></pre>
-          <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <h3>Sub-heading</h3>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <ul>
-            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-            <li>Donec id elit non mi porta gravida at eget metus.</li>
-            <li>Nulla vitae elit libero, a pharetra augue.</li>
-          </ul>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-          <ol>
-            <li>Vestibulum id ligula porta felis euismod semper.</li>
-            <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-            <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-          </ol>
-          <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+          <p>Змінна зберігає певні дані. Назва змінної в Python має починатися з алфавітного символу або зі знака підкреслення і може містити алфавітно-цифрові символи і знак підкреслення. І крім того, назва змінної не повинна збігатися з назвою ключових слів мови Python. Ключових слів не так багато, їх легко запам'ятати: and, as, assert, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, None, nonlocal, not, or, pass, raise, return, True, try, while, with, yield.
+
+            Наприклад, створимо змінну:</p>
+          
+            <img src="img/hello_1.jpg" alt="" srcset="">
+            <hr>
+          <p>Тут визначена змінна name, яка зберігає рядок "Tom".
+
+            У Пайтон застосовується два типи найменування змінних: camel case і underscore notation.
+            
+            Camel case має на увазі, що кожне нове підсловом в найменуванні змінної починається з великої літери. наприклад:</p>
+            <p></p>
+            <img src="img/hello_2.jpg" alt="" srcset="">
+            <p></p>
+          <p>Underscore notation має на увазі, що підслова в імені змінної розділяються знаком підкреслення.</p>
+          <p>І також треба враховувати чутливі до регістру, тому змінні name і Name представлятимуть різні об'єкти.
+
+            Змінна зберігає дані одного з типів даних. В Python існує безліч різних типів даних, які поділяються на категорії: числа, послідовності, словники, набори: </p>
+            <ul>
+              <li><p><strong>boolean</strong> - логічні значення <code>True</code> или <code>False</code></p></li>
+              <li><p><strong>int</strong> - представляє ціле число, наприклад, 1, 4, 8, 50.</p></li>
+              <li><p><strong>float</strong> - представляє число с плаваючою крапкою, наприклад, 1.2 или 34.76</p></li>
+              <li><p><strong>complex</strong> - комплексні числа</p></li>
+              <li><p><strong>str</strong> - рядки, наприклад "hello". В Python 3.x рядки представляють набір символів в кодировці Unicode</p></li>
+              <li><p><strong>bytes</strong> - послідовність чисел в діапазоні 0-255</p></li>
+              <li><p><strong>byte array</strong> - масив байтів, аналогічний bytes з тою відмінністю, що може змінюватись</p></li>
+              <li><p><strong>list</strong> - список</p></li>
+              <li><p><strong>tuple</strong> - кортеж</p></li>
+              <li><p><strong>set</strong> - неупорядочена колекція унікальних об'єктів</p></li>
+              <li><p><strong>frozen set</strong> - те ж саме, що і set, тільки не может змінватись (immutable)</p></li>
+              <li><p><strong>dict</strong> - словник, де кожен елемент має ключ і значення</p></li>
+              </ul>
+          <p>Python є мовою з динамічною типізацією. Він визначає тип даних змінної виходячи із значення, яке їй присвоєно. Так, при присвоєнні рядка в подвійних або одинарних лапках змінна має тип str. При присвоєнні цілого числа Python автоматично визначає тип змінної як int. Щоб визначити змінну як об'єкт float, їй присвоюється дробове число, в якому роздільником цілої і дробової частини є точка. Число з плаваючою крапкою можна визначати в експоненційному запису:</p>
+          <img src="img/type.jpg" alt="" srcset="">
+          <p></p>
+          <p>Число float може мати тільки 18 значущих симолів. Так, в даному випадку використовуються тільки два символи - 3.9. І якщо число занадто велике або занадто мало, то ми можемо записувати число у подібній нотації, використовуючи експоненту. Число після експоненти вказує ступінь числа 10, на яке треба помножити основне число - 3.9.</p>
+          
         </div><!-- /.blog-post -->
   
-        <div class="blog-post">
-          <h2 class="blog-post-title">Another blog post</h2>
-          <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-  
-          <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-          <blockquote>
-            <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          </blockquote>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-        </div><!-- /.blog-post -->
-  
-        <div class="blog-post">
-          <h2 class="blog-post-title">New feature</h2>
-          <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-  
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <ul>
-            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-            <li>Donec id elit non mi porta gravida at eget metus.</li>
-            <li>Nulla vitae elit libero, a pharetra augue.</li>
-          </ul>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-        </div><!-- /.blog-post -->
+        
   
         <nav class="blog-pagination">
           <a class="btn btn-outline-primary" href="files.html">Далі</a>
@@ -158,10 +144,8 @@
   </main><!-- /.container -->
   <br>
   <footer class="blog-footer">
-    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-    <p>
-      <a href="#">Back to top</a>
-    </p>
+    <p style="text-indent: 25px;">LearnPython - ресурс для вивчення мови програмування Python</p>
+   
   </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
